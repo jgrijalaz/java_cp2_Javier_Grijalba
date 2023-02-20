@@ -1,4 +1,8 @@
 package com.example.repositories;
 
-public interface BankAccountRepository extends org.springframework.data.jpa.repository.JpaRepository<com.example.entities.BankAccount, java.lang.Long> {
+import com.example.entities.BankAccount;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BankAccountRepository extends JpaRepository<BankAccount, Long>
+{
 }
